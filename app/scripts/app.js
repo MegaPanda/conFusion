@@ -9,14 +9,14 @@ angular.module('confusionApp', ['ui.router', 'ngResource'])
                 url:'/',
                 views: {
                     'header': {
-                        templateUrl : 'views/header.html',
+                        templateUrl : 'app/views/header.html',
                     },
                     'content': {
-                        templateUrl : 'views/home.html',
+                        templateUrl : 'app/views/home.html',
                         controller  : 'IndexController'
                     },
                     'footer': {
-                        templateUrl : 'views/footer.html',
+                        templateUrl : 'app/views/footer.html',
                     }
                 }
 
@@ -27,7 +27,7 @@ angular.module('confusionApp', ['ui.router', 'ngResource'])
                 url:'aboutus',
                 views: {
                     'content@': {
-                        templateUrl : 'views/aboutus.html',
+                        templateUrl : 'app/views/aboutus.html',
                         controller  : 'AboutController'                  
                     }
                 }
@@ -38,7 +38,7 @@ angular.module('confusionApp', ['ui.router', 'ngResource'])
                 url:'contactus',
                 views: {
                     'content@': {
-                        templateUrl : 'views/contactus.html',
+                        templateUrl : 'app/views/contactus.html',
                         controller  : 'ContactController'                  
                     }
                 }
@@ -49,7 +49,7 @@ angular.module('confusionApp', ['ui.router', 'ngResource'])
                 url: 'menu',
                 views: {
                     'content@': {
-                        templateUrl : 'views/menu.html',
+                        templateUrl : 'app/views/menu.html',
                         controller  : 'MenuController'
                     }
                 }
@@ -60,7 +60,7 @@ angular.module('confusionApp', ['ui.router', 'ngResource'])
                 url: 'menu/:id',
                 views: {
                     'content@': {
-                        templateUrl : 'views/dishdetail.html',
+                        templateUrl : 'app/views/dishdetail.html',
                         controller  : 'DishDetailController'
                    }
                 }
